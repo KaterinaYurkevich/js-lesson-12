@@ -31,8 +31,7 @@ getData("https://jsonplaceholder.typicode.com/todos/1");
 //2 var
 
 function getDataNew(url) {
-    return new Promise(resolve => resolve())
-        .then(() => fetch(url))
+    return fetch(url)
         .then(response => response.json())
         .then(data => console.log(data));
 }
