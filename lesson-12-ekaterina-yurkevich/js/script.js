@@ -33,7 +33,8 @@ getData("https://jsonplaceholder.typicode.com/todos/1");
 function getDataNew(url) {
     return fetch(url)
         .then(response => response.json())
-        .then(data => console.log(data));
+        .then(data => console.log(data))
+        .catch(alert);
 }
 
 getDataNew("https://jsonplaceholder.typicode.com/todos/1");
